@@ -1,42 +1,22 @@
-<h1>Active Directory Home Lab</h1>
+<h1>Security Audit</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+## Scenario
 
-<h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+<i>This scenario is based on a fictional company:</i>
+
+Botium Toys is a small U.S. business that develops and sells toys. The business has a single physical location. However, its online presence has grown, attracting customers in the U.S. and abroad. Their information technology (IT) department is under increasing pressure to support their online market worldwide. 
+
+The manager of the IT department has decided that an internal IT audit needs to be conducted. She expresses concerns about not having a solidified plan of action to ensure business continuity and compliance, as the business grows. She believes an internal audit can help better secure the company’s infrastructure and help them identify and mitigate potential risks, threats, or vulnerabilities to critical assets. The manager is also interested in ensuring that they comply with regulations related to accepting online payments and conducting business in the European Union (E.U.).   
+
+The IT manager starts by implementing the National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), establishing an audit scope and goals, and completing a risk assessment. The goal of the audit is to provide an overview of the risks the company might experience due to the current state of their security posture. The IT manager wants to use the audit findings as evidence to obtain approval to expand his department. 
+
+Your task is to review the IT manager’s scope, goals, and risk assessment. Then, perform an internal audit to complete a controls assessment and compliance checklist. 
 <br />
 
-
-<h2>Languages and Utilities Used</h2>
-
-<!-----
-
-Yay, no errors, warnings, or alerts!
-
-Conversion time: 0.709 seconds.
+## Controls assessment 
 
 
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Sun Nov 05 2023 18:50:41 GMT-0800 (PST)
-* Source doc: Controls assessment exemplar
-* Tables are currently converted to HTML tables.
------>
-
-
-
-# Controls assessment 
-
-
-## Current assets
+### Current assets
 
 Assets managed by the IT Department include: 
 
@@ -327,42 +307,104 @@ Low
   </tr>
 </table>
 
+<!-- Yay, no errors, warnings, or alerts! -->
 
 
-<h2>Environments Used </h2>
+## Compliance checklist
 
-- <b>Windows 10</b> (21H2)
+☐ <b>The Federal Energy Regulatory Commission - North American Electric Reliability Corporation (FERC-NERC)</b>
 
-<h2>Program walk-through:</h2>
+The FERC-NERC regulation applies to organizations that work with electricity or that are involved with the U.S. and North American power grid. Organizations have an obligation to prepare for, mitigate, and report any potential security incident that can negatively affect the power grid. Organizations are legally required to adhere to the Critical Infrastructure Protection Reliability Standards (CIP) defined by the FERC. 
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<b>Explanation:</b> NA
+
+☒ <b>General Data Protection Regulation (GDPR)</b>
+
+GDPR is a European Union (E.U.) general data regulation that protects the processing of E.U. citizens’ data and their right to privacy in and out of E.U. territory. Additionally, if a breach occurs and a E.U. citizen’s data is compromised, they must be informed within 72 hours of the incident.
+
+<b>Explanation:</b> Botium conducts business with E.U. citizens and so they must adhere to the GDPR so that they can properly and efficiently handle their customer’s data.
+
+☒ <b>Payment Card Industry Data Security Standard (PCI DSS)</b>
+
+PCI DSS is an international security standard meant to ensure that organizations storing, accepting, processing, and transmitting credit card information do so in a secure environment. 
+
+<b>Explanation:</b> The business is conducting transactions for goods and thus needs to ensure they adhere to the proper frameworks for handling payment data.
+
+☐ <b>The Health Insurance Portability and Accountability Act (HIPAA)</b>
+
+HIPAA is a federal law established in 1996 to protect U.S. patients’ health information. This law prohibits patient information from being shared without their consent. Organizations have a legal obligation to inform patients of a breach. 
+
+<b>Explanation:</b> NA
+
+☒ <b>System and Organizations Controls (SOC type 1, SOC type 2)</b>
+
+The SOC1 and SOC2 are a series of reports that focus on an organization’s user access policies at different organizational levels. They are used to assess an organization’s financial compliance and levels of risk. They also cover confidentiality, privacy, integrity, availability, security, and overall data safety. Control failures in these areas can lead to fraud.
+
+<b>Explanation:</b> Since the company has multiple employees that perform different duties, as well as a chain of command, it is necessary to establish the right user access policies. This ensures access to any asset is given only to those who need it, thus helping ensure confidentiality, privacy, integrity, availability, security and safety of data.
+
+<!-- Yay, no errors, warnings, or alerts! -->
+
+
+## Stakeholder memorandum
+
+Dear Colleagues,
+
+Please review the following information regarding the Botium Toys internal audit scope, goals, critical findings, summary and recommendations.
+
+**Scope:** 
+
+
+
+* The following systems are in scope: accounting, end point detection, firewalls, intrusion detection system, SIEM tool. The systems will be evaluated for:
+    * Current user permissions 
+    * Current implemented controls
+    * Current procedures and protocols
+* Ensure current user permissions, controls, procedures, and protocols in place align with PCI DSS and GDPR compliance requirements.
+* Ensure current technology is accounted for both hardware and system access.
+
+**Goals:**
+
+
+
+* Adhere to the NIST CSF.
+* Establish a better process for their systems to ensure they are compliant. 
+* Fortify system controls.
+* Adapt to the concept of least permissions when it comes to user credential management. 
+* Establish their policies and procedures, which includes their playbooks. 
+* Ensure they are meeting compliance requirements.
+
+**Critical findings** (must be addressed immediately): 
+
+
+
+* Multiple controls need to be developed and implemented to meet the audit goals, including:
+    * Control of Least Privilege and Separation of Duties
+    * Disaster recovery plans
+    * Password, access control, and account management policies, including the implementation of a password management system
+    * Encryption (for secure website transactions)
+    * IDS
+    * Backups
+    * AV software
+    * CCTV
+    * Locks
+    * Manual monitoring, maintenance, and intervention for legacy systems
+    * Fire detection and prevention systems
+* Policies need to be developed and implemented to meet PCI DSS and GDPR compliance requirements.
+* Policies need to be developed and implemented to align to SOC1 and SOC2 guidance related to user access policies and overall data safety. 
+
+**Findings** (should be addressed, but no immediate need): 
+
+
+
+* The following controls should be implemented when possible:
+    * Time-controlled safe
+    * Adequate lighting
+    * Locking cabinets
+    * Signage indicating alarm service provider
+
+**Summary/Recommendations:** It is recommended that critical findings relating to compliance with PCI DSS and GDPR be promptly addressed since Botium Toys accepts online payments from customers worldwide, including the E.U. Additionally, since one of the goals of the audit is to adapt to the concept of least permissions, SOC1 and SOC2 guidance related to user access policies and overall data safety should be used to develop appropriate policies and procedures. Having disaster recovery plans and backups is also critical because they support business continuity in the event of an incident. Integrating an IDS and AV software into the current systems will support our ability to identify and mitigate potential risks, and could help with intrusion detection, since existing legacy systems require manual monitoring and intervention. To further secure assets housed at Botium Toys’ single physical location, locks and CCTV should be used to secure physical assets (including equipment) and to monitor and investigate potential threats. While not necessary immediately, using encryption and having a time-controlled safe, adequate lighting, locking cabinets, fire detection and prevention systems, and signage indicating alarm service provider will further improve Botium Toys’ security posture.
+
+
 
 <!--
  ```diff
